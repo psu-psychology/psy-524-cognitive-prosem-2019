@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>psy-524-2019-gilmore</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="libs/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="libs/reveal.js-3.3.0.1/css/theme/simple.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">psy-524-2019-gilmore</h1>
+</section>
+
+<section><section id="preliminaries" class="titleslide slide level1"><h1>Preliminaries</h1></section><section id="agenda" class="slide level2">
+<h2>Agenda</h2>
+<ul>
+<li>Vision and its development</li>
+<li>Behavior in psychology and neuroscience</li>
+<li>Toward a cumulative psychological science</li>
+<li>Wrap-up</li>
+</ul>
+</section><section id="themes" class="slide level2">
+<h2>Themes</h2>
+<ul>
+<li>Psychology is a science of behavior and internal states
+<ul>
+<li>Some are more easily measured than others</li>
+</ul></li>
+<li>Psychology is harder than physics</li>
+<li>But will progress slowly unless…
+<ul>
+<li>we commit to practices that make our theories clear and our findings cumulative</li>
+</ul></li>
+</ul>
+</section></section>
+<section><section id="vision-and-its-development" class="titleslide slide level1"><h1>Vision and its development</h1></section><section id="what-is-perception-for" class="slide level2">
+<h2>What is perception for?</h2>
+</section><section id="what-is-vision-for" class="slide level2">
+<h2>What is vision for?</h2>
+<ul>
+<li>Perceiving events
+<ul>
+<li>What</li>
+<li>Where</li>
+<li>When</li>
+</ul></li>
+<li>Guiding action</li>
+</ul>
+</section><section id="properties-of-light" class="slide level2">
+<h2>Properties of light</h2>
+<ul>
+<li>Electromagnetic radiation
+<ul>
+<li>Wavelength/frequency</li>
+<li>Intensity</li>
+</ul></li>
+</ul>
+</section><section class="slide level2">
+
+<p><img src="https://ruby360.ca/images/white-papers/visibleSpectrum-2electromagnetic.png" height=500px/></p>
+</section><section id="properties-of-light-1" class="slide level2">
+<h2>Properties of light</h2>
+<ul>
+<li>Propagates quickly over long distances</li>
+<li>Some entities emit light</li>
+<li>But more refract, reflect, or absorb</li>
+</ul>
+</section><section class="slide level2">
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/HubbleDeepField.800px.jpg/450px-HubbleDeepField.800px.jpg" height=550px/></p>
+</section><section class="slide level2">
+
+<p>
+<a href="https://commons.wikimedia.org/wiki/File:Pencil_in_a_bowl_of_water.svg#/media/File:Pencil_in_a_bowl_of_water.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Pencil_in_a_bowl_of_water.svg/1200px-Pencil_in_a_bowl_of_water.svg.png" height="500px" alt="Pencil in a bowl of water.svg"></a><br>By <a href="//commons.wikimedia.org/wiki/File:Pencil_in_a_bowl_of_water.png" title="File:Pencil in a bowl of water.png">Pencil_in_a_bowl_of_water.png</a>: <a href="//commons.wikimedia.org/wiki/User:Theresa_knott" title="User:Theresa knott">User:Theresa_knott</a> derivative work: <a href="//commons.wikimedia.org/wiki/User:Gregors" title="User:Gregors">Gregors</a> (<a href="//commons.wikimedia.org/wiki/User_talk:Gregors" title="User talk:Gregors"><span class="signature-talk">talk</span></a>) 10:51, 23 February 2011 (UTC) - <a href="//commons.wikimedia.org/wiki/File:Pencil_in_a_bowl_of_water.png" title="File:Pencil in a bowl of water.png">Pencil_in_a_bowl_of_water.png</a>, <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=13712912">Link</a>
+</p>
+</section><section class="slide level2">
+
+<p><img src="http://www.justscience.in/wp-content/uploads/2017/05/reflection-of-light.jpg"/></p>
+</section><section id="structure-of-optic-array" class="slide level2">
+<h2>Structure of optic array</h2>
+<p><img src="https://www.researchgate.net/profile/Sonit_Bafna/publication/32885654/figure/fig2/AS:309911096446978@1450899971792/Gibsons-Ambient-Optic-Array-source-Gibson-1966.png"/></p>
+</section><section id="plenoptic-function" class="slide level2">
+<h2>Plenoptic function</h2>
+<p>
+<a href="https://commons.wikimedia.org/wiki/File:Plenoptic_function_b.svg#/media/File:Plenoptic_function_b.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Plenoptic_function_b.svg/1200px-Plenoptic_function_b.svg.png" alt="Plenoptic function b.svg" height="500px"></a><br>By <a href="//commons.wikimedia.org/wiki/User:Qef" title="User:Qef">Qef</a> - Own work by uploader, designed to replace original bitmap <a href="https://en.wikipedia.org/wiki/Image:Plenoptic-function-b.png" class="extiw" title="en:Image:Plenoptic-function-b.png">en:Image:Plenoptic-function-b.png</a>, but with clearer labeling., Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=4353407">Link</a>
+</p>
+</section><section id="goal-of-vision-science" class="slide level2">
+<h2>Goal of vision science</h2>
+<ul>
+<li>How do observers detect…
+<ul>
+<li>Object properties (shape, size, object type, color, surface properties)</li>
+<li>Object positions and motions</li>
+<li>Geometric layout of the environment</li>
+</ul></li>
+<li>How does vision guide action?</li>
+</ul>
+</section><section id="vision-develops" class="slide level2">
+<h2>Vision develops!</h2>
+<p><img src="img/teller-birth-3mos.png" height=550px/></p>
+</section><section class="slide level2">
+
+<p><img src="img/teller-6mos-adult.png" height=550px/></p>
+</section><section id="acuity-spatial-vision" class="slide level2">
+<h2>Acuity (spatial vision)</h2>
+<p><img src="img/teller-fig-5-acuity.png" height=550px/></p>
+</section><section class="slide level2">
+
+<p><img src="img/teller-fig-3-vernier.png" height=550px/></p>
+</section><section id="contrast-sensitivity" class="slide level2">
+<h2>Contrast sensitivity</h2>
+<p><img src="img/contrast-sens.png" height=550px/></p>
+</section><section class="slide level2">
+
+<p><img src="img/teller-fig-xx-contrast-sens.png" height=550px/></p>
+</section><section id="orientation" class="slide level2">
+<h2>Orientation</h2>
+<p><img src="img/teller-fig-20-orientation.png" height=550px/></p>
+</section><section id="putting-it-all-together" class="slide level2">
+<h2>Putting it all together</h2>
+<p><img src="img/teller-fig-xx-combined-rates.png" height=550px/></p>
+</section><section id="optic-flow" class="slide level2">
+<h2>Optic flow</h2>
+<ul>
+<li>Patterned visual motion corresponding observer (or object) motion through space</li>
+</ul>
+</section><section class="slide level2">
+
+<video controls>
+<source src="https://nyu.databrary.org/slot/9803/-/asset/11171/download?inline=true" type="video/mp4"> Your browser does not support the video tag.
+</video>
+<p>Gilmore, R.O. (2014). Four-month-olds’ discrimination of optic flow patterns depicting different directions of observer motion. Databrary. Retrieved February 8, 2019 from <a href="http://doi.org/10.17910/B7Z593" class="uri">http://doi.org/10.17910/B7Z593</a></p>
+</section><section id="optic-flow-sensitivity-develops-throughout-childhood" class="slide level2">
+<h2>Optic flow sensitivity develops throughout childhood</h2>
+<p><img src="img/moco-psychophysics-display.jpg"/></p>
+</section><section class="slide level2">
+
+<p><img src="img/qian-etal-moco.png" height=550px/></p>
+<p>Gilmore, R.O. (2016). Motion Coherence Thresholds for Child Participants Viewing Linear and Radial Patterns of Optic Flow. Databrary. Retrieved February 8, 2019 from <a href="https://nyu.databrary.org/volume/218" class="uri">https://nyu.databrary.org/volume/218</a></p>
+</section><section class="slide level2">
+
+<p><img src="img/plot-rt-2.png" height=550px/></p>
+<p>Gilmore, R.O. (2016). Motion Coherence Thresholds for Child Participants Viewing Linear and Radial Patterns of Optic Flow. Databrary. Retrieved February 8, 2019 from <a href="https://nyu.databrary.org/volume/218" class="uri">https://nyu.databrary.org/volume/218</a></p>
+</section><section id="brain-responses-do-too" class="slide level2">
+<h2>Brain responses do, too…</h2>
+<p><img src="https://journals.plos.org/plosone/article/figure/image?size=large&id=10.1371/journal.pone.0157911.g004" width=800px/></p>
+<p>Gilmore, R. O., Thomas, A. L., &amp; Fesi, J. (2016). Children’s brain responses to optic flow vary by pattern type and motion speed. <em>PloS One</em>, <em>11</em>(6), e0157911. journals.plos.org. Retrieved September 20, 2016, from <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0157911" class="uri">http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0157911</a></p>
+</section><section class="slide level2">
+
+<p><img src="https://journals.plos.org/plosone/article/figure/image?size=large&id=10.1371/journal.pone.0157911.g005" width=800px/></p>
+</section><section id="causes-of-developmental-changes-in-optic-flow-sensitivity" class="slide level2">
+<h2>‘Causes’ of developmental changes in optic flow sensitivity</h2>
+<ul>
+<li>Brain development (specific to vision, general to perception/cognition)</li>
+<li>Behavioral changes</li>
+<li>Body posture, size</li>
+</ul>
+</section><section class="slide level2">
+
+<blockquote>
+<p>“For me, one of the major attractions of visual science is the promise it holds for empirical attacks on the mind-body problem—that is, for working out meaningful ways to explain psychophysically defined visual functions on the basis of properties of the neural substrate. A critical locus or critical computation for a particular perceptual function can be defined as an anatomic or computational stage at which information concerning that function is lost or importantly reorganized; or more poetically, as a stage or computation that leaves its mark on that perceptual capacity.”</p>
+</blockquote>
+</section><section class="slide level2">
+
+<blockquote>
+<p>“Part of the appeal of visual development is its potential for extending this promise. Visual functions mature because the visual substrate matures, and the causes of functional maturation undoubtedly lie in neural maturation. But the length of the big toe matures too, and we do not see it as causal in relation to the development of grating acuity. The puzzle is, which of the many immaturities of the visual substrate provide the critical immaturities that limit a particular visual capacity at a particular age?”</p>
+</blockquote>
+</section><section id="questions" class="slide level2">
+<h2>Questions</h2>
+<ul>
+<li>What are the <em>perceptual</em> requirements for the behaviors (or internal states) you study?</li>
+<li>What is the developmental trajectory for the behaviors (or internal states) you study?</li>
+</ul>
+</section></section>
+<section><section id="behavior-in-psychology-and-neuroscience" class="titleslide slide level1"><h1>Behavior in psychology and neuroscience</h1></section><section id="what-is-behavior-anyway" class="slide level2">
+<h2>What is behavior, anyway?</h2>
+<p><a href="http://dx.doi.org/10.1016/j.anbehav.2009.03.018"> <img src="img/behavioural-bio-dont-agree.jpg"/> </a></p>
+</section><section id="a-spider-builds-a-web" class="slide level2">
+<h2>A spider builds a web</h2>
+<ul>
+<li>Behavior</li>
+<li>Not behavior</li>
+<li>Don’t know</li>
+</ul>
+</section><section id="a-rabbit-grows-thicker-fur-in-the-winter" class="slide level2">
+<h2>A rabbit grows thicker fur in the winter</h2>
+<ul>
+<li>Behavior</li>
+<li>Not behavior</li>
+<li>Don’t know</li>
+</ul>
+</section><section id="others" class="slide level2">
+<h2>Others</h2>
+<ul>
+<li>a dog salivates in anticipation of feeding time</li>
+<li>a person decides not to do anything tomorrow if it rains</li>
+<li><del>a cat produces insulin because of excess sugar in her blood</del></li>
+<li><del>a person’s heart beats harder after a nightmare</del></li>
+<li><em>a plant bends its leaves toward a light source</em></li>
+<li><em>a rat has a dislike for salty food</em></li>
+<li><em>ants that are physiologically capable of laying eggs do not do so because they are not queens.</em></li>
+</ul>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="https://ars.els-cdn.com/content/image/1-s2.0-S0896627316310406-gr1.jpg" height=450px/></p>
+</div>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="https://ars.els-cdn.com/content/image/1-s2.0-S0896627316310406-gr2.jpg" height=450px/></p>
+</div>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="https://ars.els-cdn.com/content/image/1-s2.0-S0896627316310406-gr3.jpg" height=450px/></p>
+</div>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="https://ars.els-cdn.com/content/image/1-s2.0-S0896627316310406-gr4.jpg" height=450px/></p>
+</div>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="http://dericbownds.net/uploaded_images/bigdata.png" height=450px/></p>
+</div>
+</section><section id="questions-1" class="slide level2">
+<h2>Questions</h2>
+<ul>
+<li>What behaviors are critical for humans to perform?</li>
+<li>What behaviors are critical for humans to perform in the topics you study?</li>
+<li>Does neuroscience need behavior?</li>
+<li>Does psychology</li>
+</ul>
+</section></section>
+<section><section id="toward-a-cumulative-psychological-science" class="titleslide slide level1"><h1>Toward a cumulative psychological science</h1></section></section>
+<section><section id="imagine" class="titleslide slide level1"><h1>Imagine</h1></section><section id="meta-analyses-from-your-desktop" class="slide level2">
+<h2>…meta-analyses from your desktop</h2>
+</section><section class="slide level2">
+
+<video width="900" controls data-autoplay>
+<source src="mov/neurosynth-happy.mp4" type="video/mp4"> Your browser does not support the video tag.
+</video>
+<p></br> <a href="http://neurosynth.org" class="uri">http://neurosynth.org</a></p>
+</section><section id="visualization-of-task-data-accumulated-across-studies-labs" class="slide level2">
+<h2>…visualization of task data accumulated across studies &amp; labs</h2>
+</section><section class="slide level2">
+
+<video width="900" controls data-autoplay>
+<source src="mov/wordbank-vocabulary.mp4" type="video/mp4"> Your browser does not support the video tag.
+</video>
+<p></br> <a href="http://wordbank.stanford.edu" class="uri">http://wordbank.stanford.edu</a></p>
+</section><section id="machine-learning-assisted-analysis" class="slide level2">
+<h2>…machine-learning-assisted analysis</h2>
+</section><section class="slide level2">
+
+<video height="600" controls data-autoplay>
+<source src="mov/Construction.mp4" type="video/mp4"> Your browser does not support the video tag.
+</video>
+<p><em>Source</em>: Ori Ossmy (NYU)</p>
+</section><section id="scriptable-analyses-and-visualizations-from-centrally-stored-shared-data" class="slide level2">
+<h2>…“scriptable” analyses and visualizations from centrally stored &amp; shared data</h2>
+</section><section class="slide level2">
+
+<video width="900" controls data-autoplay>
+<source src="mov/summarize_demog.mp4" type="video/mp4">
+</video>
+<p></br> <a href="http://github.com/PLAY-behaviorome/databraryapi" class="uri">http://github.com/PLAY-behaviorome/databraryapi</a></p>
+</section><section id="easy-downloading-and-reuse-of-others-materials" class="slide level2">
+<h2>…easy downloading and reuse of others’ materials</h2>
+</section><section class="slide level2">
+
+<p><img src="https://nyu.databrary.org/slot/15068/-/asset/63850/download?inline=true" height=300px/> </br> <audio controls data-autoplay> <source src="https://nyu.databrary.org/slot/12213/0,15046/asset/46757/download?inline=true" type="audio/mpeg"> Your browser does not support the audio element. </audio> <audio controls> <source src="https://nyu.databrary.org/slot/12212/0,15046/asset/46748/download?inline=true" type="audio/mpeg"> Your browser does not support the audio element. </audio> </br> </br> Cole, P.M., Gilmore, R.O., Scherf, K.S. &amp; Perez-Edgar, K. (2016). The Proximal Emotional Environment Project (PEEP). Databrary. <a href="http://doi.org/10.17910/B7.248" class="uri">http://doi.org/10.17910/B7.248</a>.</p>
+</section><section id="reproduction-of-others-procedures-through-video-protocols" class="slide level2">
+<h2>…reproduction of others’ procedures through video protocols</h2>
+</section><section class="slide level2">
+
+<video width="800" controls data-autoplay>
+<source src="https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true" type="video/mp4"> Your browser does not support the video tag.
+</video>
+<p>The PLAY Project Wiki: <a href="https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/landing" class="uri">https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/landing</a></p>
+</section><section id="a-cumulative-psychological-science" class="slide level2">
+<h2>…A cumulative psychological science</h2>
+<p><a href="https://www.psychologicalscience.org/observer/becoming-a-cumulative-science"> <img src="img/mischel-cumulative-science.jpg"/> </a></p>
+</section><section id="where" class="slide level2">
+<h2>Where</h2>
+<ul>
+<li>Findings accumulate</li>
+<li>Theories are advanced, accepted, expanded, or rejected</li>
+<li>Phenomena become increasingly predictable</li>
+<li>Discovery accelerates</li>
+</ul>
+</section></section>
+<section><section id="barriers" class="titleslide slide level1"><h1>Barriers</h1></section><section id="psychological-science-is-harder-than-physics" class="slide level2">
+<h2>Psychological science is harder than physics</h2>
+</section><section class="slide level2">
+
+<p><img src="img/psych-harder-1.jpg" height=550px/></p>
+</section><section class="slide level2">
+
+<p><img src="img/psych-harder-2.jpg" height=550px/></p>
+</section><section id="studies-are-underpowered" class="slide level2">
+<h2>Studies are underpowered</h2>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="http://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.2000797.g003&type=large" height=500px></p>
+<p><small>(<a href="http://doi.org/10.1371/journal.pbio.2000797">Szucs &amp; Ioannides, 2017</a>)</small></p>
+</div>
+<aside class="notes">
+<p>As Szucs and Ioannides have shown based on an analysis of more than 10,000 papers in the cognitive neuroscience literature, sample sizes are small, and the probability of false negatives is high, especially for small to medium effect sizes.</p>
+</aside>
+</section><section class="slide level2">
+
+<div class="centered">
+<blockquote>
+<p>“Assuming a realistic range of prior probabilities for null hypotheses, false report probability is likely to exceed 50% for the whole literature.”</p>
+</blockquote>
+<p><small>(<a href="http://doi.org/10.1371/journal.pbio.2000797">Szucs &amp; Ioannides, 2017</a>)</small></p>
+</div>
+</section><section id="published-papers-have-errors" class="slide level2">
+<h2>Published papers have errors</h2>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><a href="http://doi.org/10.3758/s13428-015-0664-2)"> <img src="https://raw.githubusercontent.com/gilmore-lab/2018-02-14-quant-dev/master/img/nuijten-etal.jpg" height=500px/> </a></p>
+</div>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="https://static-content.springer.com/image/art%3A10.3758%2Fs13428-015-0664-2/MediaObjects/13428_2015_664_Fig3_HTML.gif" height=550px></p>
+</div>
+<p><small>(<a href="http://doi.org/10.3758/s13428-015-0664-2">Nuijten et al., 2015</a>)</small></p>
+<aside class="notes">
+<p>Statistical reporting errors in the published literature are more common that many might think.</p>
+</aside>
+</section><section id="confusion-about-data-ownership" class="slide level2">
+<h2>Confusion about data ownership</h2>
+<ul>
+<li>Institutions</li>
+<li>Taxpayers</li>
+<li>Researchers</li>
+<li>Participants</li>
+</ul>
+</section><section id="eagerly-share-findings-but-not-data-or-materials" class="slide level2">
+<h2>Eagerly share findings but not data or materials</h2>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="https://raw.githubusercontent.com/gilmore-lab/psu-data-repro-bootcamp-2017-07-10/master/img/wicherts_2006_amp_61_7_726_fig1a.jpg" height=550px></p>
+<p><small>(<a href="http://doi.org/10.1037/0003-066X.61.7.726">Wicherts et al., 2006</a>)</small></p>
+</div>
+</section><section id="blinded-from-seeing-the-whole-elephant" class="slide level2">
+<h2>Blinded from seeing the whole elephant</h2>
+</section><section class="slide level2">
+
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*4UPp3Tc4A32S0WXJ0pWP7g.jpeg" height=500px/></p>
+</section><section id="fall-victim-to-the-toothbrush-problem-mischel-2009" class="slide level2">
+<h2>Fall victim to the toothbrush problem (Mischel, 2009)</h2>
+</section><section class="slide level2">
+
+<blockquote>
+<p>“<em>…psychologists tend to treat other peoples’ theories like toothbrushes; no self-respecting individual wants to use anyone else’s.</em>”</p>
+</blockquote>
+</section><section class="slide level2">
+
+<blockquote>
+<p>“<em>The toothbrush culture undermines the building of a genuinely cumulative science, encouraging more parallel play and solo game playing, rather than building on each other’s directly relevant best work.</em>”</p>
+</blockquote>
+</section></section>
+<section><section id="solutions" class="titleslide slide level1"><h1>Solutions</h1></section><section id="mischel-2009" class="slide level2">
+<h2>Mischel 2009</h2>
+<ul>
+<li>Common tools</li>
+<li>Robust, replicable, consequential findings</li>
+<li>Boundary crossing and bridge building</li>
+</ul>
+</section><section id="make-open-data-materials-sharing" class="slide level2">
+<h2>Make open data &amp; materials sharing</h2>
+</section><section id="the-norm-not-the-exception" class="slide level2">
+<h2>…the norm not the exception</h2>
+</section><section id="plan-for-sharing" class="slide level2">
+<h2>Plan for sharing</h2>
+<ul>
+<li>From the earliest stages</li>
+<li>Data Management Plans (NSF and NIH proposals)</li>
+<li>Data as a “first order” research product</li>
+</ul>
+</section><section id="what-to-share" class="slide level2">
+<h2>What to share</h2>
+<ul>
+<li>Data
+<ul>
+<li>&amp; analysis code/scripts (R, Python, SPSS, SAS, …)</li>
+<li>Rawest possible (trial-level, individual, …)</li>
+</ul></li>
+<li>Displays (&amp; code to generate)</li>
+<li>Protocols &amp; procedures
+<ul>
+<li>Video as gold standard</li>
+</ul></li>
+</ul>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><a href="http://www.apa.org/science/about/psa/2017/10/video-data.aspx"> <img src="img/video-as-data-doc.jpg" height=600px/></p>
+</div>
+</section><section class="slide level2">
+
+<p><a href="https://dev1.ed-projects.nyu.edu/wikis/docuwiki"> <img src="https://github.com/gilmore-lab/sips-2017-video-reproducibility/blob/master/img/play-wiki.jpg?raw=true" height=500px> </a></p>
+<p>The PLAY Project Wiki: <a href="https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/landing" class="uri">https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/landing</a></p>
+</section><section id="where-to-share" class="slide level2">
+<h2>Where to share</h2>
+<ul>
+<li>Data repository
+<ul>
+<li><a href="https://www.icpsr.umich.edu/">ICPSR</a>, <a href="http://dataverse.org">Dataverse</a>, <a href="https://osf.io">OSF</a>, <a href="https://">Dryad</a> (domain/measure general)</li>
+<li><a href="https://databrary.org">Databrary</a> (behavioral science; video/audio ++)</li>
+<li><a href="https://openneuro.org">OpenNeuro</a>, <a href="https://talkbank.org">TalkBank</a>, <a href="http://wordbank.stanford.edu/">WordBank</a> (measure-specific)</li>
+</ul></li>
+<li>Supplemental material with article</li>
+<li>Data paper (e.g. <em>Nature Scientific Data</em>)</li>
+<li>Institutional repository</li>
+</ul>
+</section><section id="with-whom" class="slide level2">
+<h2>With whom</h2>
+<ul>
+<li>Public
+<ul>
+<li>Risk of reidentification</li>
+<li>Can you really anonymize?</li>
+</ul></li>
+<li>Researchers
+<ul>
+<li>ICPSR, Databrary, &amp; OpenNeuro</li>
+</ul></li>
+<li>People you select &amp; vet</li>
+</ul>
+</section><section id="when" class="slide level2">
+<h2>When</h2>
+<ul>
+<li>Soon after you collect it</li>
+<li>On manuscript submission</li>
+<li>On acceptance or publication</li>
+<li>End of grant</li>
+<li><del>When I’m damn good and ready…</del></li>
+</ul>
+</section><section id="how" class="slide level2">
+<h2>How</h2>
+<ul>
+<li>“FAIRly”</li>
+<li><strong>F</strong>indable, <strong>A</strong>ccesible, <strong>I</strong>nteroperable, and <strong>R</strong>eusable <a href="http://dx.doi.org/10.1038/sdata.2016.18">(Wilkinson et al., 2016)</a>
+<ul>
+<li>Easier to find in repository</li>
+<li>Interoperable formats</li>
+<li>Codebooks</li>
+</ul></li>
+</ul>
+</section><section id="ethically" class="slide level2">
+<h2>Ethically</h2>
+<ul>
+<li>Ask permission to share (especially for sensitive, identifiable data)
+<ul>
+<li>Use template language</li>
+<li><a href="https://osf.io/9d5hr/">(Gilmore &amp; Nilsonne, 2017)</a></li>
+</ul></li>
+<li>Don’t promise to destroy data (but GDPR?)</li>
+<li>Don’t unduly restrict future reuses</li>
+</ul>
+</section><section class="slide level2">
+
+<blockquote>
+<p>“<em>the principles of human subject research require an analysis of both risks and benefits…such an analysis suggests that researchers may have a positive duty to share data in order to maximize the contribution that individual participants have made.</em>”</p>
+</blockquote>
+<p><small>(<a href="http://dx.doi.org/10.1016/j.neuroimage.2013.02.040">Brakewood &amp; Poldack, 2013</a>)</small></p>
+</section><section id="openly" class="slide level2">
+<h2>Openly</h2>
+<ul>
+<li>Without restriction on others’ reuse</li>
+<li>Without <em>quid pro quo</em>, pre-approval, or requirement of co-authorship</li>
+<li><em>With</em> expectation of ethical use <strong>AND</strong> proper citation</li>
+</ul>
+</section><section id="questions-2" class="slide level2">
+<h2>Questions</h2>
+<ul>
+<li>What barriers exist to making research in your domain more cumulative?</li>
+</ul>
+</section></section>
+<section><section id="wrap-up" class="titleslide slide level1"><h1>Wrap-up</h1></section></section>
+<section><section id="things-im-working-on" class="titleslide slide level1"><h1>Things I’m working on</h1></section><section class="slide level2">
+
+<p>This talk was produced on 2019-02-08 11:59:07 in <a href="http://rstudio.com">RStudio 1.1.453</a> using R Markdown and the reveal.JS framework. The code and materials used to generate the slides may be found at <a href="https://github.com/psu-psychology/psy-524-cognitive-prosem-2019/524-2019-02-11-gilmore.html/" class="uri">https://github.com/psu-psychology/psy-524-cognitive-prosem-2019/524-2019-02-11-gilmore.html/</a>. Information about the R Session that produced the slides is as follows:</p>
+</section><section class="slide level2">
+
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sessionInfo</span>()</code></pre></div>
+<pre><code>## R version 3.5.1 (2018-07-02)
+## Platform: x86_64-apple-darwin15.6.0 (64-bit)
+## Running under: macOS  10.14.2
+## 
+## Matrix products: default
+## BLAS: /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRlapack.dylib
+## 
+## locale:
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## 
+## loaded via a namespace (and not attached):
+##  [1] compiler_3.5.1  magrittr_1.5    htmltools_0.3.6 tools_3.5.1    
+##  [5] revealjs_0.9    rstudioapi_0.8  yaml_2.2.0      Rcpp_1.0.0     
+##  [9] stringi_1.2.4   rmarkdown_1.11  knitr_1.21      stringr_1.3.1  
+## [13] xfun_0.4        digest_0.6.18   evaluate_0.12</code></pre>
+</section></section>
+    </div>
+  </div>
+
+  <script src="libs/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="libs/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display the page number of the current slide
+        slideNumber: true,
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: true,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+        // Transition style
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'libs/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
+          { src: 'libs/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
