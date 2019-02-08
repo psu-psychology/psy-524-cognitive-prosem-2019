@@ -17,6 +17,12 @@ output:
 
 # Preliminaries
 
+## Readings
+
+- Teller, D. Y. (1997). First glances: the vision of infants. the Friedenwald lecture. *Investigative Ophthalmology & Visual Science*, *38*(11), 2183–2203. Retrieved from https://www.ncbi.nlm.nih.gov/pubmed/9344342
+- Krakauer, J. W., Ghazanfar, A. A., Gomez-Marin, A., MacIver, M. A., & Poeppel, D. (2017). *Neuroscience needs behavior: Correcting a reductionist bias*. *Neuron*, *93*(3), 480–490. Retrieved from http://dx.doi.org/10.1016/j.neuron.2016.12.041
+- Gilmore, R. O., Kennedy, J. L., & Adolph, K. E. (2018). Practical solutions for sharing data and materials from psychological research. *Advances in Methods and Practices in Psychological Science*, *1*(1), 121–130. SAGE Publications Inc. Retrieved from https://doi.org/10.1177/2515245917746500
+
 ## Agenda
 
 - Vision and its development
@@ -136,7 +142,7 @@ Gilmore, R.O. (2014). Four-month-olds' discrimination of optic flow patterns dep
 
 ## Optic flow sensitivity develops throughout childhood
 
-<img src="img/moco-psychophysics-display.jpg"/>
+<img src="img/moco-psychophysics-display.jpg" height=550px/>
 
 ---
 
@@ -244,8 +250,8 @@ Gilmore, R. O., Thomas, A. L., & Fesi, J. (2016). Children’s brain responses t
 
 - What behaviors are critical for humans to perform?
 - What behaviors are critical for humans to perform in the topics you study?
-- Does neuroscience need behavior?
-- Does psychology
+- Does neuroscience have a 'reductionist bias' that needs to be corrected?
+- Does psychology?
 
 # Toward a cumulative psychological science
 
