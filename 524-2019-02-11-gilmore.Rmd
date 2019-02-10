@@ -99,9 +99,13 @@ derivative work: <a href="//commons.wikimedia.org/wiki/User:Gregors" title="User
 
 <img src="img/teller-birth-3mos.png" height=550px/>
 
+A. Newborn, B. 1-mo, C. 2-mos, D. 3-mos
+
 ---
 
 <img src="img/teller-6mos-adult.png" height=550px/>
+
+E. 6-mos, F. Adult
 
 ## Acuity (spatial vision)
 
@@ -535,7 +539,15 @@ The PLAY Project Wiki: <https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php
 
 # Wrap-up
 
-# Things I'm working on
+## Themes
+
+- Psychology is (or should be) a science of behavior and internal states
+- Some aspects of behavior and internal states are more easily measured
+- Psychology is harder than physics...
+- But will progress slowly unless...
+    - we commit to practices that make our theories clear and our findings cumulative
+
+## Things I'm working on
 
 - What are the statistics of natural visual (sensory) experiences?
 - Human behaviorome: [Play & Learning Across a Year (PLAY) project](https://nyu.databrary.org/volume/444)
