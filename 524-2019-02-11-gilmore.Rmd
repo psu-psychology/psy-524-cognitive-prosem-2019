@@ -19,8 +19,11 @@ output:
 
 ## Readings
 
-- Teller, D. Y. (1997). First glances: the vision of infants. the Friedenwald lecture. *Investigative Ophthalmology & Visual Science*, *38*(11), 2183–2203. Retrieved from https://www.ncbi.nlm.nih.gov/pubmed/9344342
+- Teller, D. Y. (1997). First glances: The vision of infants. The Friedenwald lecture. *Investigative Ophthalmology & Visual Science*, *38*(11), 2183–2203. Retrieved from https://www.ncbi.nlm.nih.gov/pubmed/9344342
 - Krakauer, J. W., Ghazanfar, A. A., Gomez-Marin, A., MacIver, M. A., & Poeppel, D. (2017). *Neuroscience needs behavior: Correcting a reductionist bias*. *Neuron*, *93*(3), 480–490. Retrieved from http://dx.doi.org/10.1016/j.neuron.2016.12.041
+
+---
+
 - Gilmore, R. O., Kennedy, J. L., & Adolph, K. E. (2018). Practical solutions for sharing data and materials from psychological research. *Advances in Methods and Practices in Psychological Science*, *1*(1), 121–130. SAGE Publications Inc. Retrieved from https://doi.org/10.1177/2515245917746500
 
 ## Agenda
@@ -35,12 +38,64 @@ output:
 - Psychology is a science of behavior and internal states
     - Some are more easily measured than others
 - Psychology is harder than physics
-- But will progress slowly unless...
-    - we commit to practices that make our theories clear and our findings cumulative
+    - But will progress slowly unless...
+    - We commit to practices that make our theories clear and our findings cumulative
 
 # Vision and its development
 
 ## What is perception for?
+
+- Exteroception
+    - What's in the world?
+    - Where is it located? Where is it moving?
+- Interoception
+    - Where am I? Where am I moving?
+    - How am I doing?
+    
+---
+
+| Information type | Channel type | Sense | Action type |
+|------------------|--------------|-------|-------------|
+| Geometry/layout  | Electromagnetic energy (light) | Vision | Locomotion, orientation, manipulation |
+|                  | Electromagnetic energy (magnetism) | Magnetoreception | Locomotion, orientation |
+|                  | Electromagnetic energy (electricity) | Electroreception | Locomotion, orientation |
+|                  | Mechanical (vibration) | Audition | Locomotion, orientation |
+|                  | Chemical concentration | Olfaction | Locomotion, orientation |
+|                  | Thermal energy         | Thermoception | Locomotion, orientation |
+
+---
+
+| Information type | Channel type | Sense | Action type |
+|------------------|--------------|-------|-------------|
+| Object/surface properties  | Electromagnetic energy (light) | Vision | Shape, color, texture, animacy, identity |
+|                  | Electromagnetic energy (electricity) | Electroreception | Identity |
+|                  | Mechanical (vibration) | Audition | Identity |
+|                  |                        | Touch     | Substance type, texture, deformability, inertia, temperature ... |
+
+
+---
+
+| Information type | Channel type | Sense | Action type |
+|------------------|--------------|-------|-------------|
+| Object/surface properties                 | Chemical concentration | Olfaction | Identity |
+|                  |                        | Gustation | Identity |
+|                  |                        | Digestion | ???      |
+
+---
+
+| Information type | Channel type | Sense | Action type |
+|------------------|--------------|-------|-------------|
+| Proprioception | Electromagnetic energy (light) | Vision | Position, orientation |
+|                  | Electromagnetic energy (electricity) | Electroreception | Identity |                  | Mechanical (linear, rotational acceleration) | Vestibular | Locomotion, orientation |
+|                  | Mechanical (joint tension/force) | Kinesthesia | Joint length, force, position |
+
+---
+
+<div class="centered">
+<img src="https://raw.githubusercontent.com/psu-psychology/psy-511-scan-fdns-2017/master/lectures/img/swanson-2005-fig-1.jpg" height=450px/>
+
+[Swanson, 2005](http://dx.doi.org/10.1002/cne.20733)
+</div>
 
 ## What is vision for?
 
@@ -79,7 +134,7 @@ derivative work: <a href="//commons.wikimedia.org/wiki/User:Gregors" title="User
 
 <img src="http://www.justscience.in/wp-content/uploads/2017/05/reflection-of-light.jpg"/>
 
-## Structure of optic array
+## Geometric structure of optic array
 
 <img src="https://www.researchgate.net/profile/Sonit_Bafna/publication/32885654/figure/fig2/AS:309911096446978@1450899971792/Gibsons-Ambient-Optic-Array-source-Gibson-1966.png"/>
 
@@ -170,11 +225,10 @@ Gilmore, R. O., Thomas, A. L., & Fesi, J. (2016). Children’s brain responses t
 
 <img src="https://journals.plos.org/plosone/article/figure/image?size=large&id=10.1371/journal.pone.0157911.g005" width=800px/>
 
-## 'Causes' of developmental changes in optic flow sensitivity
+## "Causes" of developmental changes in optic flow sensitivity
 
 - Brain development (specific to vision, general to perception/cognition)
-- Behavioral changes
-- Body posture, size
+- Behavioral/postural changes (crawling vs. walking, head/eye stability, ...)
 
 ---
 
@@ -184,10 +238,21 @@ Gilmore, R. O., Thomas, A. L., & Fesi, J. (2016). Children’s brain responses t
 
 >"Part of the appeal of visual development is its potential for extending this promise. Visual functions mature because the visual substrate matures, and the causes of functional maturation undoubtedly lie in neural maturation. But the length of the big toe matures too, and we do not see it as causal in relation to the development of grating acuity. The puzzle is, which of the many immaturities of the visual substrate provide the critical immaturities that limit a particular visual capacity at a particular age?"
 
+## Student questions
+
+- "Why does visual acuity increase so much faster in infant monkeys than in human infants? Is this because macaques reach full maturity at a much faster rate than humans in general?"
+- "These two examples suggest to me that brain activity might predict later behavioral development. Are there developmental theories that consider this brain before behavior aspect in its model?"
+- "...Is this [Teller's] method of color discrimination truly the best method to assess the development of infant color vision?"
+
+---
+
+- "However, a large body of work suggests that the interactive specialization theory is a better framework for examining the development of sensory, motor, and cognitive functions...Does the field need to use neuroscientific methods to resolve this conflict in theoretical perspectives? If so, what is the place of behavioral work in these theoretical debates?"
+
 ## Questions
 
 - What are the *perceptual* requirements for the behaviors (or internal states) you study?
 - What is the developmental trajectory for the behaviors (or internal states) you study?
+- Can psychophysically-inspired methods (measuring response functions) apply to your problems?
 
 # Behavior in psychology and neuroscience
 
@@ -203,12 +268,18 @@ Gilmore, R. O., Thomas, A. L., & Fesi, J. (2016). Children’s brain responses t
 - Not behavior
 - Don't know
 
-## A rabbit grows thicker fur in the winter
+## A spider builds a web
 
 - Behavior
-- Not behavior
-- Don't know
+- ~~Not behavior~~
+- ~~Don't know~~
 
+
+## A rabbit grows thicker fur in the winter
+
+- ~~Behavior~~
+- ~~Not behavior~~
+- ~~Don't know~~
 
 ## Others
 
@@ -219,6 +290,15 @@ Gilmore, R. O., Thomas, A. L., & Fesi, J. (2016). Children’s brain responses t
 - *a plant bends its leaves toward a light source*
 - *a rat has a dislike for salty food*
 - *ants that are physiologically capable of laying eggs do not do so because they are not queens.*
+
+## The "outputs"...
+
+- "Behaviors"
+    - Changes in body position or orientation
+    - Vocalization
+- "Physiological responses"
+    - Changes in heart rate, respiration, pupil dilation, skin conductance
+    - Hormonal secretions (cortisol, oxytocin, vasopressin, melatonin, insulin, ...)
 
 ---
 
@@ -249,6 +329,11 @@ Gilmore, R. O., Thomas, A. L., & Fesi, J. (2016). Children’s brain responses t
 <div class="centered">
 <img src="http://dericbownds.net/uploaded_images/bigdata.png" height=450px/>
 </div>
+
+## Student questions
+
+- "...Can neuroscience methodology really test causality between brain activation and function/behavior if we cannot know what the very basis (i.e. inhibition or excitation) of activation is?"
+- "Can we ever go beyond finding correlations between neural activities and behavior using neuroscience practices?"
 
 ## Questions
 
@@ -533,6 +618,20 @@ The PLAY Project Wiki: <https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php
 - Without *quid pro quo*, pre-approval, or requirement of co-authorship
 - *With* expectation of ethical use **AND** proper citation
 
+## Student questions
+
+- "I wonder how often the data that is shared will be accessed and utilized. There are very few systems in place that reward researchers for spending time examining data collected by their colleagues. How can the field promote use of the data shared and reward replication?
+- "How might data sharing techniques assist in addressing Marr’s three levels of analyses within the context of cognitive neuroscience?"
+
+---
+
+- "I thought about how there may be other reasons besides the challenges involved with personally identifiable data for why researchers do not share, such as worry that the method will only be loosely replicated or that the original study won’t hold up. I was curious, then, about the importance of being able to replicate behavioral data prior to doing any neuroscience study that builds on it."
+- "How can we, as a community, systematically change the culture of academia such that we are more open to mistakes, criticisms, and making corrections without negative professional consequences?"
+
+---
+
+- "If stimuli are able to be shared more readily through these platforms, and multiple labs start to converge on utilizing the same stimuli in their paradigms, is there a reason to be concerned that effects we see may be purely or partially based on the stimuli that have been shared? Is there a downside to people utilizing the same stimuli?"
+
 ## Questions
 
 - What barriers exist to making research in your domain more cumulative?
@@ -541,15 +640,14 @@ The PLAY Project Wiki: <https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php
 
 ## Themes
 
-- Psychology is (or should be) a science of behavior and internal states
-- Some aspects of behavior and internal states are more easily measured
+- Psychology is (or should be) a science of behavior and internal state
 - Psychology is harder than physics...
-- But will progress slowly unless...
-    - we commit to practices that make our theories clear and our findings cumulative
+    - But will progress slowly unless...
+    - We commit to practices that make our theories clear and our findings cumulative
 
 ## Things I'm working on
 
-- What are the statistics of natural visual (sensory) experiences?
+- What are the statistics of natural sensory (visual) experiences?
 - Human behaviorome: [Play & Learning Across a Year (PLAY) project](https://nyu.databrary.org/volume/444)
 - Tools for cumulative psychological science: AI/computer vision, [R](https://github.com/PLAY-behaviorome/databraryapi)/[Python](https://github.com/PLAY-behaviorome/databrarypy) packages to interact with [Databrary](http://databrary.org), [Datavyu](http://datavyu.org)
 
